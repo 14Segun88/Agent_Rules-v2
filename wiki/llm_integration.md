@@ -55,3 +55,6 @@
 
 ## Результаты бенчмарков
 → Подробности см. [benchmark_history.md](benchmark_history.md)
+
+### 📝 [2026-04-11 22:00] [Antigravity]
+compile.py использует LLM API (Gemma) для умной категоризации, но имеет полноценный fallback на правила

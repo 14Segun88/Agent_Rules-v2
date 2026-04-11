@@ -55,3 +55,9 @@ cross_model_scorer.py                            — Cross-model scoring
 - **Python:** системный Python 3
 - **Зависимости:** `flask`, `werkzeug`, `rapidfuzz`, `PyMuPDF`
 - **OCR (системный):** `sudo apt-get install tesseract-ocr tesseract-ocr-rus`
+
+### 📝 [2026-04-11 22:00] [Antigravity]
+watcher.py имеет debounce (5с) и min interval (30с) чтобы не перегружать систему
+
+### 📝 [2026-04-11 22:00] [Antigravity]
+Git auto-commit встроен в compile.py — wiki обновляется автоматически после каждой компиляции

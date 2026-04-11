@@ -33,3 +33,6 @@ messages = [
 
 *Дата открытия: 2026-03-30*
 *Подтверждено бенчмарком: 2026-04-01*
+
+### ✅ [2026-04-11 22:00] [Antigravity]
+Создан строгий system prompt (.agent/instructions.md) с автоматическим Check-in/Check-out
