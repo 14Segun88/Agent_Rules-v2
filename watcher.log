@@ -97,3 +97,48 @@
 [21:20:51] INFO: Done. Total updates: 13
 [21:23:06] ERROR: Invalid file path (path traversal): ../etc/passwd
 [21:23:16] ERROR: Invalid file path (path traversal): /etc/passwd
+[22:17:59] ERROR: Invalid file path (path traversal): ../etc/passwd
+[22:18:00] ERROR: Invalid file path (path traversal): /etc/passwd
+[22:18:23] ERROR: Invalid file path (path traversal): ../etc/passwd
+[22:18:23] ERROR: Invalid file path (path traversal): /etc/passwd
+[22:18:34] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[22:18:49] ERROR: Invalid file path (path traversal): ../etc/passwd
+[22:18:49] ERROR: Invalid file path (path traversal): /etc/passwd
+[22:19:03] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Создан репозиторий AGENTS_RULES-v2 с полной структурой (18 ф
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Мигрированы все знания из PROJECT_MEMORY.md (45KB) в 12 тема
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан compile.py с LLM-категоризацией + rule-based fallbac
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан watcher.py с watchdog + polling fallback + daemon mo
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/few_shot_prompting.md: Создан строгий system prompt (.agent/instructions.md) с авто
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Сохранён Handover Protocol и правило «Успех/Неудача»
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: shared_status.md сокращён до < 2KB
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py использует LLM API (Gemma) для умной категоризаци
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/architecture.md: watcher.py имеет debounce (5с) и min interval (30с) чтобы не
+[22:19:03] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Git auto-commit встроен в compile.py — wiki обновляется авто
+[22:19:03] INFO: Processing: test_log.md
+[22:19:33] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[22:19:33] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 1
+[22:19:33] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 2
+[22:19:33] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 3
+[22:19:33] INFO: Done. Total updates: 13
+[22:19:38] ERROR: Invalid file path (path traversal): /home/segun/CascadeProjects/Перед 0_2/AGENTS_RULES-v2/raw/test_log.md
+[22:19:38] ERROR: Invalid file path (path traversal): ../etc/passwd
+[22:19:44] ERROR: Invalid file path (path traversal): /etc/passwd
+[22:19:46] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[22:20:16] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Создан репозиторий AGENTS_RULES-v2 с полной структурой (18 ф
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Мигрированы все знания из PROJECT_MEMORY.md (45KB) в 12 тема
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан compile.py с LLM-категоризацией + rule-based fallbac
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан watcher.py с watchdog + polling fallback + daemon mo
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/few_shot_prompting.md: Создан строгий system prompt (.agent/instructions.md) с авто
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Сохранён Handover Protocol и правило «Успех/Неудача»
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: shared_status.md сокращён до < 2KB
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py использует LLM API (Gemma) для умной категоризаци
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/architecture.md: watcher.py имеет debounce (5с) и min interval (30с) чтобы не
+[22:20:16] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Git auto-commit встроен в compile.py — wiki обновляется авто
+[22:20:16] INFO: Processing: test_log.md
+[22:20:45] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[22:20:45] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 1
+[22:20:45] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 2
+[22:20:45] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 3
+[22:20:45] INFO: Done. Total updates: 13
