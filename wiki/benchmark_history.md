@@ -66,3 +66,6 @@ cross_model_scorer.py     — cross-model scoring
 score_fair.py             — точный scorer (без семантики)
 ab_benchmark.py           — A/B бенчмарк Llama vs GigaChat
 ```
+
+### ✅ [2026-04-13 01:38] [Antigravity]
+Динамически обновлено более 20 жёстких путей в скриптах (например, путь к `json/knowledge_base.json` в `web_app_v6_cot_fallback.py` и `run_benchmark_fair.py`).
