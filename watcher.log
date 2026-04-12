@@ -1,0 +1,99 @@
+[22:43:38] WATCHER INFO: Daemon stopped (PID: 8785)
+[22:43:38] WATCHER INFO: Watcher started as daemon (PID: 12651)
+[22:43:38] WATCHER INFO: Daemon running (PID: 12651)
+[22:43:38] WATCHER INFO: 🔄 Running compile.py...
+[22:43:38] WATCHER INFO: To stop: python3 watcher.py --stop
+[22:43:38] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[22:43:38] INFO: Done. Total updates: 0
+[22:43:38] WATCHER INFO: ✅ Compilation complete
+[22:43:38] WATCHER INFO: 👁️ Watching /home/segun/CascadeProjects/Перед 0_2/AGENTS_RULES-v2/raw (watchdog mode)
+[20:20:38] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[20:20:38] INFO: Done. Total updates: 0
+[20:20:42] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[20:20:43] ERROR: File not found: nonexistent.md
+[20:20:56] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[20:20:56] INFO: Done. Total updates: 0
+[20:21:11] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: Всё по плану, без блокеров
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Создан репозиторий AGENTS_RULES-v2 с полной структурой (18 ф
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Мигрированы все знания из PROJECT_MEMORY.md (45KB) в 12 тема
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан compile.py с LLM-категоризацией + rule-based fallbac
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан watcher.py с watchdog + polling fallback + daemon mo
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/few_shot_prompting.md: Создан строгий system prompt (.agent/instructions.md) с авто
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Сохранён Handover Protocol и правило «Успех/Неудача»
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: shared_status.md сокращён до < 2KB
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py использует LLM API (Gemma) для умной категоризаци
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/architecture.md: watcher.py имеет debounce (5с) и min interval (30с) чтобы не
+[20:21:11] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Git auto-commit встроен в compile.py — wiki обновляется авто
+[20:21:11] INFO: Done. Total updates: 11
+[20:22:36] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[20:23:06] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: Всё по плану, без блокеров
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Создан репозиторий AGENTS_RULES-v2 с полной структурой (18 ф
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Мигрированы все знания из PROJECT_MEMORY.md (45KB) в 12 тема
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан compile.py с LLM-категоризацией + rule-based fallbac
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан watcher.py с watchdog + polling fallback + daemon mo
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/few_shot_prompting.md: Создан строгий system prompt (.agent/instructions.md) с авто
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Сохранён Handover Protocol и правило «Успех/Неудача»
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: shared_status.md сокращён до < 2KB
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py использует LLM API (Gemma) для умной категоризаци
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/architecture.md: watcher.py имеет debounce (5с) и min interval (30с) чтобы не
+[20:23:06] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Git auto-commit встроен в compile.py — wiki обновляется авто
+[20:23:06] INFO: Done. Total updates: 11
+[20:32:53] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[20:32:53] INFO: Processing: 2026-04-12_20-25_TestAgent.md
+[20:33:22] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/errors/kb_conflicts.md: KB matching score давал 0.99 при совпадении раздела — игнори
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/errors/ocr_issues.md: OCR на сканах низкого качества давал 40% ошибок
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Проверен парсинг файлов
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Протестирован dry-run режим
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Найдены потенциальные уязвимости
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py имеет timeout 30s для LLM API — достаточный fallb
+[20:33:22] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Категоризация по ключевым словам работает корректно
+[20:33:22] INFO: Done. Total updates: 7
+[20:43:54] INFO: Processing: test_log.md
+[20:44:26] INFO: Processing: test_log.md
+[20:44:56] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[20:44:56] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: Всё по плану, без блокеров
+[20:44:56] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 1
+[20:44:56] INFO: Done. Total updates: 2
+[21:18:13] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[21:18:42] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: Всё по плану, без блокеров
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Создан репозиторий AGENTS_RULES-v2 с полной структурой (18 ф
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Мигрированы все знания из PROJECT_MEMORY.md (45KB) в 12 тема
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан compile.py с LLM-категоризацией + rule-based fallbac
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан watcher.py с watchdog + polling fallback + daemon mo
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/few_shot_prompting.md: Создан строгий system prompt (.agent/instructions.md) с авто
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Сохранён Handover Protocol и правило «Успех/Неудача»
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: shared_status.md сокращён до < 2KB
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py использует LLM API (Gemma) для умной категоризаци
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/architecture.md: watcher.py имеет debounce (5с) и min interval (30с) чтобы не
+[21:18:42] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Git auto-commit встроен в compile.py — wiki обновляется авто
+[21:18:42] INFO: Processing: test_log.md
+[21:19:11] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[21:19:11] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: Всё по плану, без блокеров
+[21:19:11] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 1
+[21:19:11] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 2
+[21:19:11] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 3
+[21:19:11] INFO: Done. Total updates: 15
+[21:19:53] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[21:20:22] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Создан репозиторий AGENTS_RULES-v2 с полной структурой (18 ф
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Мигрированы все знания из PROJECT_MEMORY.md (45KB) в 12 тема
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан compile.py с LLM-категоризацией + rule-based fallbac
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Написан watcher.py с watchdog + polling fallback + daemon mo
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/few_shot_prompting.md: Создан строгий system prompt (.agent/instructions.md) с авто
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: Сохранён Handover Protocol и правило «Успех/Неудача»
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/skills/general.md: shared_status.md сокращён до < 2KB
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/llm_integration.md: compile.py использует LLM API (Gemma) для умной категоризаци
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/architecture.md: watcher.py имеет debounce (5с) и min interval (30с) чтобы не
+[21:20:22] INFO:   [DRY-RUN] Would append to wiki/architecture.md: Git auto-commit встроен в compile.py — wiki обновляется авто
+[21:20:22] INFO: Processing: test_log.md
+[21:20:51] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[21:20:51] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 1
+[21:20:51] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 2
+[21:20:51] INFO:   [DRY-RUN] Would append to wiki/errors/general.md: line 3
+[21:20:51] INFO: Done. Total updates: 13
+[21:23:06] ERROR: Invalid file path (path traversal): ../etc/passwd
+[21:23:16] ERROR: Invalid file path (path traversal): /etc/passwd

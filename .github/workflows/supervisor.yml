@@ -1,0 +1,51 @@
+name: Supervisor Health Check
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  supervisor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run supervisor check
+        run: python3 supervisor.py --fix
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push fixes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "Jules-Supervisor"
+          git config user.email "supervisor[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "[Supervisor] auto-fix: lint, dedup, false errors removed"
+          git push origin main
+
+      - name: Create issue on errors
+        if: failure()
+        run: |
+          REPORT=$(cat supervisor_report.md 2>/dev/null || echo "No report generated")
+          gh issue create \
+            --title "🔴 Supervisor found errors — $(date +%Y-%m-%d)" \
+            --body "$REPORT" \
+            --label "supervisor,bug" || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

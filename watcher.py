@@ -27,14 +27,18 @@ import time
 from pathlib import Path
 from typing import NoReturn
 
+BASE_DIR = Path(__file__).parent.resolve()
+
 logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s] WATCHER %(levelname)s: %(message)s",
     datefmt="%H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(BASE_DIR / "watcher.log", encoding="utf-8")
+    ]
 )
 log = logging.getLogger("watcher")
-
-BASE_DIR = Path(__file__).parent.resolve()
 RAW_DIR = BASE_DIR / "raw"
 COMPILE_SCRIPT = BASE_DIR / "compile.py"
 PID_FILE = BASE_DIR / "watcher.pid"
