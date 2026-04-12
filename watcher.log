@@ -1,0 +1,19 @@
+[20:04:08] INFO: Stripped auto-generated entries from llm_integration.md
+[20:04:08] INFO: Stripped auto-generated entries from architecture.md
+[20:04:08] INFO: Stripped auto-generated entries from general.md
+[20:04:08] INFO: Stripped auto-generated entries from few_shot_prompting.md
+[20:04:08] INFO: Stripped auto-generated entries from general.md
+[20:04:08] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[20:04:38] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[20:04:38] INFO:   → Appended to wiki/skills/general.md
+[20:04:38] INFO:   → Appended to wiki/skills/general.md
+[20:04:38] INFO:   → Appended to wiki/skills/general.md
+[20:04:38] INFO:   → Appended to wiki/skills/general.md
+[20:04:38] INFO:   → Appended to wiki/skills/few_shot_prompting.md
+[20:04:38] INFO:   → Appended to wiki/skills/general.md
+[20:04:38] INFO:   → Appended to wiki/skills/general.md
+[20:04:38] INFO:   → Appended to wiki/llm_integration.md
+[20:04:38] INFO:   → Appended to wiki/architecture.md
+[20:04:38] INFO:   → Appended to wiki/architecture.md
+[20:04:38] INFO: Index rebuilt: /app/index.md
+[20:04:38] INFO: Done. Total updates: 10

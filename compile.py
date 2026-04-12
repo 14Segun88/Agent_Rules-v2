@@ -40,6 +40,10 @@ logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s] %(levelname)s: %(message)s",
     datefmt="%H:%M:%S",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(BASE_DIR / "watcher.log", encoding="utf-8")
+    ]
 )
 log = logging.getLogger("compile")
 
@@ -56,6 +60,27 @@ def mark_as_processed(filename: str) -> None:
     processed = get_processed_files()
     processed.add(filename)
     PROCESSED_MARKER.write_text("\n".join(sorted(processed)) + "\n")
+
+
+_FALSE_POSITIVE_PATTERNS = [
+    r"всё по плану",
+    r"без блокеров",
+    r"без ошибок",
+    r"всё работает",
+    r"нет проблем",
+    r"no issues?",
+    r"all good",
+    r"everything works",
+    r"нет",
+]
+
+
+def _is_false_positive(text: str) -> bool:
+    lower = text.lower().strip()
+    for pattern in _FALSE_POSITIVE_PATTERNS:
+        if re.search(pattern, lower):
+            return True
+    return False
 
 
 def parse_raw_log(filepath: Path) -> dict:
@@ -102,16 +127,23 @@ def parse_raw_log(filepath: Path) -> dict:
             continue
         elif current_section and line_stripped.startswith("- "):
             item = line_stripped[2:].strip()
+            if _is_false_positive(item):
+                continue
             if current_section == "task":
                 sections["task"] = item
             elif current_section == "next_step":
                 sections["next_step"] = item
             elif isinstance(sections.get(current_section), list):
                 sections[current_section].append(item)
-        elif current_section == "task" and line_stripped:
-            sections["task"] = line_stripped
-        elif current_section == "next_step" and line_stripped:
-            sections["next_step"] = line_stripped
+        elif current_section and line_stripped and not line_stripped.startswith("#"):
+            if _is_false_positive(line_stripped):
+                continue
+            if current_section == "task":
+                sections["task"] = line_stripped
+            elif current_section == "next_step":
+                sections["next_step"] = line_stripped
+            elif isinstance(sections.get(current_section), list):
+                sections[current_section].append(line_stripped)
 
     return sections
 
@@ -347,8 +379,8 @@ def rebuild_index() -> None:
     log.info("Index rebuilt: %s", INDEX_FILE)
 
 
-def git_auto_commit(message: str) -> None:
-    """Auto-commit and push changes if in a git repo."""
+def git_auto_commit(message: str, *, push: bool = True) -> None:
+    """Auto-commit and optionally push changes if in a git repo."""
     try:
         subprocess.run(
             ["git", "add", "-A"],
@@ -369,13 +401,16 @@ def git_auto_commit(message: str) -> None:
                 capture_output=True,
                 timeout=10,
             )
-            subprocess.run(
-                ["git", "push", "origin", "main"],
-                cwd=str(BASE_DIR),
-                capture_output=True,
-                timeout=30,
-            )
-            log.info("Git: committed and pushed — %s", message)
+            if push:
+                subprocess.run(
+                    ["git", "push", "origin", "main"],
+                    cwd=str(BASE_DIR),
+                    capture_output=True,
+                    timeout=30,
+                )
+                log.info("Git: committed and pushed — %s", message)
+            else:
+                log.info("Git: committed (no push) — %s", message)
         else:
             log.info("Git: no changes to commit")
     except Exception as e:
@@ -408,6 +443,22 @@ def process_file(filepath: Path, dry_run: bool = False) -> int:
     return len(updates)
 
 
+def _strip_auto_generated_entries() -> None:
+    """Remove auto-generated entries from wiki files before recompile."""
+    for filepath in WIKI_DIR.rglob("*.md"):
+        content = filepath.read_text(encoding="utf-8")
+        original = content
+        content = re.sub(
+            r"\n###\s+[❌✅📝]\s+\[.*?\]\s+\[.*?\]\n.*?(?=\n###|\Z)",
+            "",
+            content,
+            flags=re.DOTALL,
+        )
+        if content != original:
+            filepath.write_text(content, encoding="utf-8")
+            log.info("Stripped auto-generated entries from %s", filepath.name)
+
+
 def main() -> None:
     """Main entry point."""
     parser = argparse.ArgumentParser(description="AGENTS_RULES v2 Compiler")
@@ -415,6 +466,7 @@ def main() -> None:
     parser.add_argument("--recompile", action="store_true", help="Reprocess all files")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be done")
     parser.add_argument("--no-git", action="store_true", help="Skip git commit/push")
+    parser.add_argument("--no-push", action="store_true", help="Commit but don't push")
     args = parser.parse_args()
 
     RAW_DIR.mkdir(exist_ok=True)
@@ -424,8 +476,15 @@ def main() -> None:
     processed = set() if args.recompile else get_processed_files()
     total_updates = 0
 
+    if args.recompile and not args.dry_run:
+        _strip_auto_generated_entries()
+
     if args.file:
         filepath = Path(args.file)
+        if ".." in str(filepath) or str(filepath).startswith("/"):
+            log.error("Invalid file path (path traversal): %s", args.file)
+            sys.exit(1)
+        filepath = BASE_DIR / filepath if not filepath.is_absolute() else filepath
         if filepath.exists():
             total_updates = process_file(filepath, args.dry_run)
         else:
@@ -448,7 +507,10 @@ def main() -> None:
     if total_updates > 0 and not args.dry_run:
         rebuild_index()
         if not args.no_git:
-            git_auto_commit(f"[compile] Processed {total_updates} updates from raw logs")
+            git_auto_commit(
+                f"[compile] Processed {total_updates} updates from raw logs",
+                push=not args.no_push,
+            )
 
     log.info("Done. Total updates: %d", total_updates)
 
