@@ -21,3 +21,8 @@ watcher.pid
 
 # Temporary compilation artifacts
 raw/.processing/
+
+# Logs
+watcher.log
+supervisor_cron.log
+supervisor_result.json

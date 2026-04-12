@@ -422,11 +422,42 @@ def format_report(issues: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
+def generate_jules_questions(issues: list[dict]) -> list[str]:
+    """Generate questions for the user based on found issues."""
+    questions: list[str] = []
+
+    for issue in issues:
+        if issue["area"] == "compliance" and "age" in issue.get("msg", ""):
+            questions.append(
+                "Агенты не активны > 2 дней. Хочешь отключить cron-мониторинг или отправить напоминание?"
+            )
+        elif issue["area"] == "false_error":
+            questions.append(
+                f"В {issue.get('file', 'wiki')} найдена ложная ошибка. Удалить автоматически или проверить вручную?"
+            )
+        elif issue["area"] == "lint" and "Orphan" in issue.get("msg", ""):
+            questions.append(
+                f"Страница {issue.get('file', '?')} не в index.md. Добавить ссылку или удалить страницу?"
+            )
+        elif issue["area"] == "status" and "outdated" in issue.get("msg", "").lower():
+            questions.append("shared_status.md устарел. Обновить текущим статусом проекта?")
+        elif issue["area"] == "stale":
+            questions.append(
+                f"Устаревшая запись в {issue.get('file', '?')}. Архивировать или оставить?"
+            )
+
+    if not questions and not issues:
+        questions.append("Всё в порядке. Есть ли новые задачи для агентов?")
+
+    return questions
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="AGENTS_RULES v2 Supervisor")
     parser.add_argument("--fix", action="store_true", help="Auto-fix safe issues")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be fixed")
     parser.add_argument("--json", action="store_true", help="Output as JSON")
+    parser.add_argument("--jules-mode", action="store_true", help="Generate questions for user (Jules interaction)")
     parser.add_argument("--age", type=int, default=STALE_DAYS_DEFAULT, help="Stale threshold in days")
     args = parser.parse_args()
 
@@ -440,6 +471,11 @@ def main() -> None:
     SUPERVISOR_REPORT.write_text(report, encoding="utf-8")
     print(report)
 
+    result_json = {"timestamp": ts(), "issues": issues}
+    (BASE_DIR / "supervisor_result.json").write_text(
+        json.dumps(result_json, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
     if args.fix or args.dry_run:
         fixes = auto_fix(issues, dry_run=args.dry_run)
         if fixes:
@@ -450,8 +486,14 @@ def main() -> None:
         else:
             print("\nNo auto-fixable issues found.")
 
+    if args.jules_mode:
+        questions = generate_jules_questions(issues)
+        print("\n--- QUESTIONS FOR USER ---\n")
+        for i, q in enumerate(questions, 1):
+            print(f"  ❓ {i}. {q}")
+
     error_count = sum(1 for i in issues if i["severity"] == "error")
-    if error_count > 0:
+    if error_count > 0 and not args.fix:
         sys.exit(1)
 
 
