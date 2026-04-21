@@ -28,6 +28,7 @@ messages = [
 
 ## Подбор примеров
 Метод `_get_kb_matching_entries(filename, top_n)` — находит **топ-2** наиболее похожие записи из KB по score, а не первые 3 записи.
+> ⚠️ УСТАРЕЛО (2026-04-21): В версии v5_final лимит примеров увеличен до 3 (см. wiki/skills/semantic_matching.md).
 
 ---
 
