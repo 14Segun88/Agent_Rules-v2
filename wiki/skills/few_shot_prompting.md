@@ -28,6 +28,7 @@ messages = [
 
 ## Подбор примеров
 Метод `_get_kb_matching_entries(filename, top_n)` — находит **топ-2** наиболее похожие записи из KB по score, а не первые 3 записи.
+> ⚠️ УСТАРЕЛО (2026-04-24): В v5_final лимит увеличен до 3 (см. Семантический Matching).
 
 ---
 
@@ -36,3 +37,4 @@ messages = [
 
 ### ✅ [2026-04-11 22:00] [Antigravity]
 Создан строгий system prompt (.agent/instructions.md) с автоматическим Check-in/Check-out
+> ⚠️ УСТАРЕЛО (2026-04-24): Папка .agent удалена при реструктуризации 2026-04-13. Инструкции перенесены в md/AGENT_PROTOCOL.md.
