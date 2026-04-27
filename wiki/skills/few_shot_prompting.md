@@ -36,3 +36,6 @@ messages = [
 
 ### ✅ [2026-04-11 22:00] [Antigravity]
 Создан строгий system prompt (.agent/instructions.md) с автоматическим Check-in/Check-out
+
+### ✅ [2026-04-27 10:00] [Jules]
+Проведен аудит `wiki/errors/`: помечены как исправленные проблемы Jules ( Thinking hang, prompt issues, notifications) и дубликаты KB.
