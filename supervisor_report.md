@@ -1,4 +1,4 @@
-# Supervisor Report — 2026-04-28 06:07
+# Supervisor Report — 2026-04-28 09:21
 
 **Errors:** 0 | **Warnings:** 0 | **Info:** 34
 
@@ -11,8 +11,8 @@
 - 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/benchmark_history.md)
 - 🔵 Entry older than 14 days (17d ago) — consider archiving (wiki/llm_integration.md)
+- 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/benchmark_history.md)
 - 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/errors/general.md)
 - 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/errors/general.md)
 - 🔵 Entry older than 14 days (15d ago) — consider archiving (wiki/errors/general.md)
