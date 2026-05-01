@@ -52,6 +52,7 @@ shared_status.md сокращён до < 2KB
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
 Обнаружены незапушенные коммиты в репозитории `AGENTS_RULES-v2` и мусорный старый файл `.agent/instructions.md`.
+> ⚠️ УСТАРЕЛО (2026-05-01): Файл .agent/instructions.md удален, используется md/AGENT_PROTOCOL.md
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
 Созданы новые логические директории: `python/`, `json/`, `md/`, `sh/`, `logs/`, `docx/`.
