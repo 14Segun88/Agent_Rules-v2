@@ -55,9 +55,11 @@ shared_status.md сокращён до < 2KB
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
 Созданы новые логические директории: `python/`, `json/`, `md/`, `sh/`, `logs/`, `docx/`.
+> ⚠️ УСТАРЕЛО (2026-05-09): Restructuring is not present in the current filesystem; files remain in the root.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
 Более 35 файлов из корня распределены по смысловым папкам.
+> ⚠️ УСТАРЕЛО (2026-05-09): Restructuring is not present in the current filesystem; files remain in the root.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
 Пути конфигураций `.windsurfrules`, `.kilo`, `.amazonq` перенаправлены на `md/AGENT_PROTOCOL.md`.
