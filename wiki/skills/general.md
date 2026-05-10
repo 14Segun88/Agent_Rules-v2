@@ -51,6 +51,7 @@ shared_status.md сокращён до < 2KB
 Произведён независимый аудит отчёта KiloCode. Подтверждена защита от path traversal, добавление --no-push и дедупликация в compile.py.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
+> ⚠️ УСТАРЕЛО (2026-05-10): Файл .agent/instructions.md признан устаревшим и заменен на md/AGENT_PROTOCOL.md.
 Обнаружены незапушенные коммиты в репозитории `AGENTS_RULES-v2` и мусорный старый файл `.agent/instructions.md`.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
