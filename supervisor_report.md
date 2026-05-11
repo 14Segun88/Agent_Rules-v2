@@ -1,18 +1,18 @@
-# Supervisor Report — 2026-05-11 07:40
+# Supervisor Report — 2026-05-11 09:57
 
 **Errors:** 0 | **Warnings:** 0 | **Info:** 34
 
 ## ⏰ Устаревшие записи
 
-- 🔵 Entry older than 14 days (30d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (30d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (30d ago) — consider archiving (wiki/llm_integration.md)
 - 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/benchmark_history.md)
+- 🔵 Entry older than 14 days (30d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (30d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/errors/general.md)
 - 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/errors/general.md)
 - 🔵 Entry older than 14 days (28d ago) — consider archiving (wiki/errors/general.md)
