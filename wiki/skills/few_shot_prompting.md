@@ -36,3 +36,4 @@ messages = [
 
 ### ✅ [2026-04-11 22:00] [Antigravity]
 Создан строгий system prompt (.agent/instructions.md) с автоматическим Check-in/Check-out
+> ⚠️ УСТАРЕЛО (2026-05-30): Файл .agent/instructions.md признан устаревшим ("trash") в логах от 2026-04-13.
