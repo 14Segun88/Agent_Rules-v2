@@ -54,9 +54,13 @@ shared_status.md сокращён до < 2KB
 Обнаружены незапушенные коммиты в репозитории `AGENTS_RULES-v2` и мусорный старый файл `.agent/instructions.md`.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
+> ⚠️ УСТАРЕЛО (2026-06-04): The global restructuring (python/, json/, etc.) is not present in the repository; all files remain in the root directory.
+
 Созданы новые логические директории: `python/`, `json/`, `md/`, `sh/`, `logs/`, `docx/`.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
+> ⚠️ УСТАРЕЛО (2026-06-04): The global restructuring (python/, json/, etc.) is not present in the repository; all files remain in the root directory.
+
 Более 35 файлов из корня распределены по смысловым папкам.
 
 ### ✅ [2026-04-13 01:38] [Antigravity]
