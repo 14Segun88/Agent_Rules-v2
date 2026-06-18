@@ -3644,3 +3644,59 @@
 [08:48:58] INFO: Skipping (already processed): 2026-04-13_01-38_Antigravity.md
 [08:48:58] INFO: Done. Total updates: 0
 [08:48:59] INFO: Index rebuilt: /home/runner/work/Agent_Rules-v2/Agent_Rules-v2/index.md
+[09:48:30] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[09:48:30] INFO: Skipping (already processed): 2026-04-13_00-51_KiloCode.md
+[09:48:30] INFO: Skipping (already processed): 2026-04-13_01-38_Antigravity.md
+[09:48:30] INFO: Done. Total updates: 0
+[09:49:02] INFO: Stripped auto-generated entries from llm_integration.md
+[09:49:02] INFO: Stripped auto-generated entries from benchmark_history.md
+[09:49:02] INFO: Stripped auto-generated entries from architecture.md
+[09:49:02] INFO: Stripped auto-generated entries from general.md
+[09:49:02] INFO: Stripped auto-generated entries from few_shot_prompting.md
+[09:49:02] INFO: Stripped auto-generated entries from general.md
+[09:49:02] INFO: Processing: 2026-04-11_22-00_Antigravity.md
+[09:49:32] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[09:49:32] INFO:   → Appended to wiki/skills/general.md
+[09:49:32] INFO:   → Appended to wiki/skills/general.md
+[09:49:32] INFO:   → Appended to wiki/skills/general.md
+[09:49:32] INFO:   → Appended to wiki/skills/general.md
+[09:49:32] INFO:   → Appended to wiki/skills/few_shot_prompting.md
+[09:49:32] INFO:   → Appended to wiki/skills/general.md
+[09:49:32] INFO:   → Appended to wiki/skills/general.md
+[09:49:32] INFO:   → Appended to wiki/llm_integration.md
+[09:49:32] INFO:   → Appended to wiki/architecture.md
+[09:49:32] INFO:   → Appended to wiki/architecture.md
+[09:49:32] INFO: Processing: 2026-04-13_00-51_KiloCode.md
+[09:50:02] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[09:50:02] INFO:   → Appended to wiki/errors/general.md
+[09:50:02] INFO:   → Appended to wiki/errors/general.md
+[09:50:02] INFO:   → Appended to wiki/errors/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/skills/general.md
+[09:50:02] INFO:   → Appended to wiki/architecture.md
+[09:50:02] INFO:   → Appended to wiki/architecture.md
+[09:50:02] INFO:   → Appended to wiki/architecture.md
+[09:50:02] INFO: Processing: 2026-04-13_01-38_Antigravity.md
+[09:50:32] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/benchmark_history.md
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/skills/general.md
+[09:50:32] INFO:   → Appended to wiki/architecture.md
+[09:50:32] INFO:   → Appended to wiki/architecture.md
+[09:50:32] INFO: Index rebuilt: /app/index.md
+[09:50:32] INFO: Done. Total updates: 34
+[09:51:03] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[09:51:03] INFO: Skipping (already processed): 2026-04-13_00-51_KiloCode.md
+[09:51:03] INFO: Skipping (already processed): 2026-04-13_01-38_Antigravity.md
+[09:51:03] INFO: Done. Total updates: 0
