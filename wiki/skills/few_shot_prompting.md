@@ -35,4 +35,5 @@ messages = [
 *Подтверждено бенчмарком: 2026-04-01*
 
 ### ✅ [2026-04-11 22:00] [Antigravity]
+> ⚠️ УСТАРЕЛО (2026-06-15): Файл .agent/instructions.md заменен на AGENT_PROTOCOL.md в корне.
 Создан строгий system prompt (.agent/instructions.md) с автоматическим Check-in/Check-out
