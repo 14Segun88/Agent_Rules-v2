@@ -6,6 +6,7 @@
 
 ## Проблема
 При одновременной инъекции KB примеров и длинных текстов (>15000 символов), LM Studio возвращает:
+> ✅ ИСПРАВЛЕНО (2026-07-05)
 ```
 "The number of tokens to keep from the initial prompt is greater than the context size"
 ```
