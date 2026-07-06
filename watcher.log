@@ -4409,3 +4409,22 @@
 [05:10:08] INFO: Skipping (already processed): 2026-04-13_01-38_Antigravity.md
 [05:10:08] INFO: Done. Total updates: 0
 [05:10:08] INFO: Index rebuilt: /home/runner/work/Agent_Rules-v2/Agent_Rules-v2/index.md
+[09:40:12] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[09:40:12] INFO: Skipping (already processed): 2026-04-13_00-51_KiloCode.md
+[09:40:12] INFO: Skipping (already processed): 2026-04-13_01-38_Antigravity.md
+[09:40:12] INFO: Done. Total updates: 0
+[09:41:08] INFO: Skipping (already processed): 2026-04-11_22-00_Antigravity.md
+[09:41:08] INFO: Skipping (already processed): 2026-04-13_00-51_KiloCode.md
+[09:41:08] INFO: Skipping (already processed): 2026-04-13_01-38_Antigravity.md
+[09:41:08] INFO: Processing: 2026-07-06_09-40_Jules.md
+[09:41:38] WARNING: LLM unavailable (<urlopen error timed out>), using rule-based categorization
+[09:41:38] INFO:   → Appended to wiki/skills/general.md
+[09:41:38] INFO:   → Appended to wiki/skills/general.md
+[09:41:38] INFO:   → Appended to wiki/skills/general.md
+[09:41:38] INFO:   → Appended to wiki/skills/few_shot_prompting.md
+[09:41:38] INFO:   → Appended to wiki/skills/general.md
+[09:41:38] INFO:   → Appended to wiki/skills/general.md
+[09:41:38] INFO:   → Appended to wiki/architecture.md
+[09:41:38] INFO:   → Appended to wiki/architecture.md
+[09:41:38] INFO: Index rebuilt: /app/index.md
+[09:41:38] INFO: Done. Total updates: 8
