@@ -36,3 +36,7 @@ messages = [
 
 ### ✅ [2026-04-11 22:00] [Antigravity]
 Создан строгий system prompt (.agent/instructions.md) с автоматическим Check-in/Check-out
+> ⚠️ УСТАРЕЛО (2026-07-06): Заменено на AGENT_PROTOCOL.md в корне репозитория.
+
+### ✅ [2026-07-06 09:40] [Jules]
+Помечены как устаревшие навыки в `wiki/skills/` (реструктуризация, старый system prompt).
