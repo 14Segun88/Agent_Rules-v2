@@ -1,17 +1,17 @@
-# Supervisor Report — 2026-08-07 02:52
+# Supervisor Report — 2026-08-07 04:53
 
 **Errors:** 0 | **Warnings:** 0 | **Info:** 34
 
 ## ⏰ Устаревшие записи
 
+- 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/llm_integration.md)
-- 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (116d ago) — consider archiving (wiki/benchmark_history.md)
 - 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/skills/few_shot_prompting.md)
 - 🔵 Entry older than 14 days (118d ago) — consider archiving (wiki/skills/general.md)
