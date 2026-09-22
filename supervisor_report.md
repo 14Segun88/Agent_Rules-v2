@@ -1,4 +1,4 @@
-# Supervisor Report — 2026-09-22 14:21
+# Supervisor Report — 2026-09-22 18:30
 
 **Errors:** 0 | **Warnings:** 0 | **Info:** 34
 
@@ -13,6 +13,9 @@
 - 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/errors/general.md)
+- 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/errors/general.md)
+- 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/errors/general.md)
 - 🔵 Entry older than 14 days (164d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (164d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (164d ago) — consider archiving (wiki/skills/general.md)
@@ -35,6 +38,3 @@
 - 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (164d ago) — consider archiving (wiki/skills/few_shot_prompting.md)
-- 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/errors/general.md)
-- 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/errors/general.md)
-- 🔵 Entry older than 14 days (162d ago) — consider archiving (wiki/errors/general.md)
