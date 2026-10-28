@@ -1,10 +1,9 @@
-# Supervisor Report — 2026-10-28 10:59
+# Supervisor Report — 2026-10-28 17:05
 
 **Errors:** 0 | **Warnings:** 0 | **Info:** 34
 
 ## ⏰ Устаревшие записи
 
-- 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/llm_integration.md)
 - 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/benchmark_history.md)
 - 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/architecture.md)
@@ -13,9 +12,7 @@
 - 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/architecture.md)
-- 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/errors/general.md)
-- 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/errors/general.md)
-- 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/errors/general.md)
+- 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/llm_integration.md)
 - 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/skills/general.md)
@@ -38,3 +35,6 @@
 - 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (200d ago) — consider archiving (wiki/skills/few_shot_prompting.md)
+- 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/errors/general.md)
+- 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/errors/general.md)
+- 🔵 Entry older than 14 days (198d ago) — consider archiving (wiki/errors/general.md)
