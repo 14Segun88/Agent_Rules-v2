@@ -1,10 +1,9 @@
-# Supervisor Report — 2026-11-25 13:54
+# Supervisor Report — 2026-11-25 22:56
 
 **Errors:** 0 | **Warnings:** 0 | **Info:** 34
 
 ## ⏰ Устаревшие записи
 
-- 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/llm_integration.md)
 - 🔵 Entry older than 14 days (226d ago) — consider archiving (wiki/benchmark_history.md)
 - 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/architecture.md)
@@ -13,6 +12,7 @@
 - 🔵 Entry older than 14 days (226d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (226d ago) — consider archiving (wiki/architecture.md)
 - 🔵 Entry older than 14 days (226d ago) — consider archiving (wiki/architecture.md)
+- 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/llm_integration.md)
 - 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/skills/few_shot_prompting.md)
 - 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/skills/general.md)
 - 🔵 Entry older than 14 days (228d ago) — consider archiving (wiki/skills/general.md)
